@@ -1,0 +1,309 @@
+"use client";
+
+import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import { products } from "../../data/products";
+
+export default function HondaProductsPage() {
+  const [search, setSearch] = useState("");
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
+  const hondaProducts = products
+    .filter((product) => {
+      const matchesCategory = product.category === "Honda";
+
+      const matchesSearch =
+        product.name.toLowerCase().includes(search.toLowerCase()) ||
+        product.description.toLowerCase().includes(search.toLowerCase());
+
+      return matchesCategory && matchesSearch;
+    })
+    .slice(0, 6);
+
+  return (
+    <>
+      <Navbar />
+
+      <main className="min-h-screen bg-[#F5F1E8] text-[#1C1A16]">
+
+        {/* HERO */}
+        <section className="relative overflow-hidden px-6 py-10">
+
+          <div className="absolute left-1/4 top-0 h-96 w-96 rounded-full bg-[#B5541F]/10 blur-3xl" />
+
+          {/* Back Button - Upper Left */}
+          <div className="relative mx-auto max-w-7xl">
+            <Link
+              href="/products"
+              className="inline-flex items-center gap-2 rounded-xl border border-[#E4DCC8] bg-white px-5 py-3 text-sm font-semibold text-[#B5541F] transition hover:border-[#B5541F] hover:bg-[#B5541F]/10"
+            >
+              ← Back to Products
+            </Link>
+          </div>
+
+          {/* Hero Content */}
+          <div className="relative mx-auto  max-w-5xl text-center">
+
+            <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#B5541F]">
+              Honda Products
+            </p>
+
+            <h1 className="mt-5 text-5xl font-bold md:text-7xl">
+              Honda
+              <span className="block text-[#B5541F]">
+                Oils & Lubricants
+              </span>
+            </h1>
+
+            <p className="mx-auto mt-7 max-w-3xl text-lg text-[#5C574B]">
+              Explore available Honda genuine oils and lubricant products
+              at HH Traders Filters and Lubricants Dealer.
+            </p>
+
+          </div>
+        </section>
+
+
+        {/* SEARCH */}
+        <section className="px-6 pb-10">
+
+          <div className="mx-auto max-w-4xl">
+
+            <input
+              type="text"
+              placeholder="Search Honda products..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="w-full rounded-2xl border border-[#E4DCC8] bg-white px-6 py-5 text-[#1C1A16] outline-none placeholder:text-[#ADA48E] focus:border-[#B5541F] focus:ring-4 focus:ring-[#B5541F]/10"
+            />
+
+          </div>
+
+        </section>
+
+
+        {/* PRODUCTS */}
+        <section className="px-6 pb-24">
+
+          <div className="mx-auto max-w-7xl">
+
+            <div className="mb-12 flex items-end justify-between">
+
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#B5541F]">
+                  Honda Collection
+                </p>
+
+                <h2 className="mt-4 text-4xl font-bold">
+                  Available Products
+                </h2>
+              </div>
+
+              <p className="text-[#5C574B]">
+                {hondaProducts.length} Products Found
+              </p>
+
+            </div>
+
+
+            {hondaProducts.length > 0 ? (
+
+              <div className="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
+
+                {hondaProducts.map((product) => (
+
+                  <div
+                    key={product.id}
+                    className="group overflow-hidden rounded-3xl border border-[#E4DCC8] bg-white transition duration-300 hover:-translate-y-2 hover:border-[#B5541F]/50 hover:shadow-lg"
+                  >
+
+                 {/* PRODUCT IMAGE */}
+<div className="relative h-82.5 w-full bg-white">
+  <Image
+    src={product.image}
+    alt={product.name}
+    width={400}
+    height={400}
+    className="h-full w-full object-cover"
+  />
+</div>
+
+                    {/* PRODUCT DETAILS */}
+                    <div className="p-7">
+
+                      <h3 className="text-2xl font-bold">
+                        {product.name}
+                      </h3>
+
+                      <p className="mt-4 line-clamp-2 text-[#5C574B]">
+                        {product.description}
+                      </p>
+
+
+                      {/* PRICE SECTION */}
+                      <div className="mt-6 rounded-2xl border border-[#B5541F]/20 bg-[#B5541F]/5 p-4">
+
+                        <p className="text-sm text-[#5C574B]">
+                          Price
+                        </p>
+
+                        <p className="mt-1 text-2xl font-bold text-[#B5541F]">
+                          Rs. {product.price}
+                        </p>
+
+                      </div>
+
+
+                      {/* VIEW PRODUCT */}
+                      <button
+                        onClick={() => setSelectedProduct(product)}
+                        className="mt-6 w-full rounded-xl bg-[#B5541F] py-4 font-semibold text-[#F5F1E8] transition hover:bg-[#943F14]"
+                      >
+                        View Product →
+                      </button>
+
+                    </div>
+
+                  </div>
+
+                ))}
+
+              </div>
+
+            ) : (
+
+              <div className="rounded-3xl border border-[#E4DCC8] bg-white py-20 text-center">
+
+                <h3 className="text-2xl font-bold">
+                  No Honda Products Found
+                </h3>
+
+                <button
+                  onClick={() => setSearch("")}
+                  className="mt-6 rounded-xl bg-[#B5541F] px-6 py-3 font-semibold text-[#F5F1E8] transition hover:bg-[#943F14]"
+                >
+                  Clear Search
+                </button>
+
+              </div>
+
+            )}
+
+          </div>
+
+        </section>
+
+
+        {/* PRODUCT MODAL */}
+        {selectedProduct && (
+
+          <div
+            className="fixed inset-0 z-100 flex items-center justify-center bg-[#1C1A16]/70 p-4"
+            onClick={() => setSelectedProduct(null)}
+          >
+
+            <div
+              className="relative max-h-[90vh] w-full max-w-5xl overflow-y-auto rounded-3xl bg-white"
+              onClick={(e) => e.stopPropagation()}
+            >
+
+              {/* CLOSE BUTTON */}
+              <button
+                onClick={() => setSelectedProduct(null)}
+                className="absolute right-5 top-5 z-20 rounded-full border border-[#E4DCC8] bg-white px-4 py-2 text-[#1C1A16] transition hover:bg-[#F5F1E8]"
+              >
+                ✕
+              </button>
+
+
+             <div className="grid lg:grid-cols-2">
+
+  {/* PRODUCT IMAGE */}
+  <div className="relative w-full bg-white">
+    <Image
+      src={selectedProduct.image}
+      alt={selectedProduct.name}
+      fill
+      priority
+      className="object-cover h-full w-full"
+    />
+  </div>
+
+
+  {/* PRODUCT INFORMATION */}
+  <div className="p-10">
+
+    <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#B5541F]">
+      Honda Product
+    </p>
+
+    <h2 className="mt-3 text-4xl font-bold">
+      {selectedProduct.name}
+    </h2>
+
+
+    {/* PRICE */}
+    <div className="mt-6 rounded-2xl border border-[#B5541F]/20 bg-[#B5541F]/5 p-5">
+
+      <p className="text-sm text-[#5C574B]">
+        Price
+      </p>
+
+      <p className="mt-1 text-3xl font-bold text-[#B5541F]">
+        Rs. {selectedProduct.price}
+      </p>
+
+    </div>
+
+
+    <p className="mt-6 text-[#5C574B]">
+      {selectedProduct.description}
+    </p>
+
+
+    {/* SPECIFICATIONS */}
+    <div className="mt-8 space-y-3">
+
+      {selectedProduct.specifications?.map((spec) => (
+        <div
+          key={spec}
+          className="rounded-xl border border-[#E4DCC8] bg-[#F5F1E8] p-4 text-[#3A362E]"
+        >
+          <span className="text-[#B5541F]">✓</span> {spec}
+        </div>
+      ))}
+
+    </div>
+
+
+    {/* WHATSAPP BUTTON */}
+    <a
+      href={`https://wa.me/923000140571?text=${encodeURIComponent(
+        `Hello HH Traders, I am interested in ${selectedProduct.name}. Price: Rs. ${selectedProduct.price}`
+      )}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="mt-8 block rounded-xl bg-green-600 px-6 py-4 text-center font-semibold text-white transition hover:bg-green-500"
+    >
+      Ask About This Product
+    </a>
+
+  </div>
+
+</div>
+
+            </div>
+
+          </div>
+
+        )}
+
+      </main>
+
+      <Footer />
+    </>
+  );
+}
