@@ -132,7 +132,7 @@ return (
           </p>
 
           <p className="mt-6 text-lg font-semibold text-[#B5541F]">
-            your-email@example.com
+            sami1981.rot@gmail.com
           </p>
 
         </a>

@@ -78,14 +78,14 @@ export default function Footer() {
 
             {/* Email */}
             <a
-              href="mailto:info@oilchange.com"
+
               className="group inline-flex items-center gap-3 text-[#5C574B] transition duration-300 hover:text-[#1C1A16]"
             >
               <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#B5541F]/10 text-[#B5541F] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#B5541F] group-hover:text-white">
                 <MessageCircle />
               </span>
 
-              <span>info@oilchange.com</span>
+              <span>sami1981.rot@gmail.com</span>
             </a>
 
             {/* Social Media */}
