@@ -73,15 +73,14 @@ export default async function BlogArticlePage({ params }) {
     <>
       <Navbar />
 
-      <main className="min-h-screen overflow-hidden bg-[#F5F1E8] text-[#1C1A16]">
+      <main className="min-h-screen overflow-hidden bg-white text-[#1C1A16]">
 
 
         {/* ================= ARTICLE HERO ================= */}
 
         <section className="relative overflow-hidden px-6 py-8 md:py-16 ">
 
-          <div className="absolute left-1/4 top-0 h-96 w-96 rounded-full bg-[#B5541F]/10 blur-3xl"></div>
-
+          
           <div className="relative mx-auto max-w-5xl ">
 
             {/* Back Button */}
@@ -223,8 +222,7 @@ export default async function BlogArticlePage({ params }) {
 
             <div className="relative mt-16 overflow-hidden rounded-3xl border border-[#B5541F]/20 bg-[#B5541F]/5 p-8 md:p-10">
 
-              <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#B5541F]/15 blur-3xl"></div>
-
+              
               <div className="relative">
 
                 <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#B5541F]">

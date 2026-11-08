@@ -30,15 +30,13 @@ export default function HaganProductsPage() {
     <>
       <Navbar />
 
-      <main className="min-h-screen bg-[#F5F1E8] text-[#1C1A16]">
+      <main className="min-h-screen bg-white text-[#1C1A16]">
 
         {/* ================= HERO ================= */}
         <section className="relative overflow-hidden px-6 py-12">
 
           {/* Background Glow */}
-          <div className="absolute left-1/4 top-0 h-96 w-96 rounded-full bg-[#B5541F]/10 blur-3xl" />
-          <div className="absolute right-0 top-40 h-72 w-72 rounded-full bg-[#B5541F]/5 blur-3xl" />
-
+                    
           {/* Back Button */}
           <div className="relative mx-auto max-w-7xl">
             <Link
@@ -158,9 +156,7 @@ export default function HaganProductsPage() {
                           Price
                         </p>
 
-                        <p className="mt-1 text-2xl font-bold text-[#B5541F]">
-                          Rs. {product.price}
-                        </p>
+                        <a href={`https://wa.me/923000140571?text=${encodeURIComponent(`Hello HH Traders, I would like to know the price of ${product.name}`)}`} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="mt-1 text-2xl font-bold text-[#B5541F] inline-block underline-offset-4 hover:underline">Learn More</a>
 
                       </div>
 
@@ -227,7 +223,7 @@ export default function HaganProductsPage() {
               {/* CLOSE BUTTON */}
               <button
                 onClick={() => setSelectedProduct(null)}
-                className="absolute right-5 top-5 z-20 flex h-10 w-10 items-center justify-center rounded-full border border-[#E4DCC8] bg-white text-xl text-[#1C1A16] transition hover:bg-[#F5F1E8]"
+                className="absolute right-5 top-5 z-20 flex h-10 w-10 items-center justify-center rounded-full border border-[#E4DCC8] bg-white text-xl text-[#1C1A16] transition hover:bg-white"
               >
                 ✕
               </button>
@@ -265,9 +261,7 @@ export default function HaganProductsPage() {
                       Price
                     </p>
 
-                    <p className="mt-1 text-3xl font-bold text-[#B5541F]">
-                      Rs. {selectedProduct.price}
-                    </p>
+                    <a href={`https://wa.me/923000140571?text=${encodeURIComponent(`Hello HH Traders, I would like to know the price of ${selectedProduct.name}`)}`} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="mt-1 text-3xl font-bold text-[#B5541F] inline-block underline-offset-4 hover:underline">Learn More</a>
 
                   </div>
 
@@ -290,7 +284,7 @@ export default function HaganProductsPage() {
 
                           <div
                             key={spec}
-                            className="rounded-xl border border-[#E4DCC8] bg-[#F5F1E8] p-4 text-[#3A362E]"
+                            className="rounded-xl border border-[#E4DCC8] bg-white p-4 text-[#3A362E]"
                           >
                             <span className="mr-2 text-[#B5541F]">
                               ✓
@@ -309,7 +303,7 @@ export default function HaganProductsPage() {
                   {/* WHATSAPP BUTTON */}
                   <a
                     href={`https://wa.me/923000140571?text=${encodeURIComponent(
-                      `Hello HH Traders, I am interested in ${selectedProduct.name}. Price: Rs. ${selectedProduct.price}`
+                      `Hello HH Traders, I am interested in ${selectedProduct.name}`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"

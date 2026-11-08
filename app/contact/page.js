@@ -44,15 +44,13 @@ return (
 <> <Navbar />
 
 
-  <main className="min-h-screen overflow-hidden bg-[#F5F1E8] text-[#1C1A16]">
+  <main className="min-h-screen overflow-hidden bg-white text-[#1C1A16]">
 
     {/* ================= HERO SECTION ================= */}
     <section className="relative px-6 py-16">
 
       {/* Background Glow */}
-      <div className="absolute left-1/4 top-0 h-96 w-96 rounded-full bg-[#B5541F]/10 blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-[#B5541F]/5 blur-3xl"></div>
-
+            
       <div className="relative mx-auto max-w-4xl text-center">
 
         <p className="mb-5 text-sm font-semibold uppercase tracking-[0.35em] text-[#B5541F]">
@@ -204,7 +202,7 @@ return (
                 href="https://wa.me/923000140571"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex gap-5 rounded-2xl border border-[#E4DCC8] bg-[#F5F1E8] p-5 transition duration-300 hover:border-green-500/40"
+                className="flex gap-5 rounded-2xl border border-[#E4DCC8] bg-white p-5 transition duration-300 hover:border-green-500/40"
               >
 
 
@@ -225,7 +223,7 @@ return (
           href="https://www.google.com/maps/search/?api=1&query=HH+Traders+Filters+and+Lubricants+Dealer+Layyah"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex gap-5 rounded-2xl border border-[#E4DCC8] bg-[#F5F1E8] p-5 transition duration-300 hover:border-[#B5541F]/40"
+          className="flex gap-5 rounded-2xl border border-[#E4DCC8] bg-white p-5 transition duration-300 hover:border-[#B5541F]/40"
         >
 
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#B5541F]/10 text-xl text-[#B5541F]">
@@ -246,7 +244,7 @@ return (
             </Link>
 
 
-            <div className="flex gap-5 rounded-2xl border border-[#E4DCC8] bg-[#F5F1E8] p-5 transition duration-300 hover:border-[#B5541F]/40">
+            <div className="flex gap-5 rounded-2xl border border-[#E4DCC8] bg-white p-5 transition duration-300 hover:border-[#B5541F]/40">
 
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#B5541F]/10 text-xl">
                 🕘
@@ -266,7 +264,7 @@ return (
             </div>
 
 
-            <Link href={'/products'} className="flex gap-5 rounded-2xl border border-[#E4DCC8] bg-[#F5F1E8] p-5 transition duration-300 hover:border-[#B5541F]/40">
+            <Link href={'/products'} className="flex gap-5 rounded-2xl border border-[#E4DCC8] bg-white p-5 transition duration-300 hover:border-[#B5541F]/40">
 
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#B5541F]/10 text-xl">
                 <PackageCheck className="text-[#B5541F]"/>
@@ -294,9 +292,8 @@ return (
         {/* RIGHT CONTACT FORM */}
         <div className="relative mt-5">
 
-          <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#B5541F]/15 blur-3xl"></div>
-
-          <div className="relative rounded-3xl border border-[#E4DCC8] bg-[#F5F1E8] p-8 shadow-xl md:p-10">
+          
+          <div className="relative rounded-3xl border border-[#E4DCC8] bg-white p-8 shadow-xl md:p-10">
 
             <h2 className="text-3xl font-bold">
               Send Us A Message

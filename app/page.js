@@ -19,16 +19,14 @@ export default function Home() {
     <>
       <Navbar />
 
-      <main className="overflow-hidden bg-[#F5F1E8] text-[#1C1A16]">
+      <main className="overflow-hidden bg-white text-[#1C1A16]">
 
         {/* ================= HERO SECTION ================= */}
         <section className="relative overflow-hidden px-4 py-12 sm:px-6 sm:py-16 lg:py-20">
 
           {/* Background Effects */}
-          <div className="absolute left-1/4 top-0 h-64 w-64 rounded-full bg-[#B5541F]/10 blur-3xl sm:h-96 sm:w-96" />
-
-          <div className="absolute bottom-0 right-0 h-64 w-64 rounded-full bg-[#B5541F]/5 blur-3xl sm:h-96 sm:w-96" />
-
+          
+          
           <div className="relative mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-2 lg:gap-12">
 
             {/* Left Content */}
@@ -224,8 +222,7 @@ export default function Home() {
 
 
               {/* Decorative Glow */}
-              <div className="absolute -bottom-10 -right-10 -z-10 h-32 w-32 rounded-full bg-[#B5541F]/10 blur-3xl sm:h-40 sm:w-40" />
-
+              
             </div>
 
           </div>
@@ -259,7 +256,7 @@ export default function Home() {
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4 sm:gap-6">
 
               {/* Card 1 */}
-              <div className="group rounded-2xl border border-[#E4DCC8] bg-[#F5F1E8] p-6 transition-all duration-500 hover:-translate-y-3 hover:border-[#B5541F]/50 hover:bg-white sm:p-7">
+              <div className="group rounded-2xl border border-[#E4DCC8] bg-white p-6 transition-all duration-500 hover:-translate-y-3 hover:border-[#B5541F]/50 hover:bg-white sm:p-7">
 
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#B5541F]/10 text-[#B5541F] transition-all duration-500 group-hover:scale-110 group-hover:bg-[#B5541F] group-hover:text-white">
                   <BadgeCheck size={30} />
@@ -278,7 +275,7 @@ export default function Home() {
 
 
               {/* Card 2 */}
-              <div className="group rounded-2xl border border-[#E4DCC8] bg-[#F5F1E8] p-6 transition-all duration-500 hover:-translate-y-3 hover:border-[#B5541F]/50 hover:bg-white sm:p-7">
+              <div className="group rounded-2xl border border-[#E4DCC8] bg-white p-6 transition-all duration-500 hover:-translate-y-3 hover:border-[#B5541F]/50 hover:bg-white sm:p-7">
 
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#B5541F]/10 text-[#B5541F] transition-all duration-500 group-hover:scale-110 group-hover:bg-[#B5541F] group-hover:text-white">
                   <PackageCheck size={30} />
@@ -297,7 +294,7 @@ export default function Home() {
 
 
               {/* Card 3 */}
-              <div className="group rounded-2xl border border-[#E4DCC8] bg-[#F5F1E8] p-6 transition-all duration-500 hover:-translate-y-3 hover:border-[#B5541F]/50 hover:bg-white sm:p-7">
+              <div className="group rounded-2xl border border-[#E4DCC8] bg-white p-6 transition-all duration-500 hover:-translate-y-3 hover:border-[#B5541F]/50 hover:bg-white sm:p-7">
 
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#B5541F]/10 text-[#B5541F] transition-all duration-500 group-hover:scale-110 group-hover:bg-[#B5541F] group-hover:text-white">
                   <Handshake size={30} />
@@ -316,7 +313,7 @@ export default function Home() {
 
 
               {/* Card 4 */}
-              <div className="group rounded-2xl border border-[#E4DCC8] bg-[#F5F1E8] p-6 transition-all duration-500 hover:-translate-y-3 hover:border-[#B5541F]/50 hover:bg-white sm:p-7">
+              <div className="group rounded-2xl border border-[#E4DCC8] bg-white p-6 transition-all duration-500 hover:-translate-y-3 hover:border-[#B5541F]/50 hover:bg-white sm:p-7">
 
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#B5541F]/10 text-[#B5541F] transition-all duration-500 group-hover:scale-110 group-hover:bg-[#B5541F] group-hover:text-white">
                   <Timer size={30} />
@@ -341,7 +338,7 @@ export default function Home() {
 
 
         {/* ================= REVIEWS ================= */}
-        <section className="bg-[#F5F1E8] px-4 py-16 sm:px-6 sm:py-20">
+        <section className="bg-white px-4 py-16 sm:px-6 sm:py-20">
 
           <div className="mx-auto max-w-7xl">
 

@@ -1,10 +1,9 @@
 export default function Map() {
-return ( <section className=" relative overflow-hidden bg-[#F5F1E8] px-6 py-10">
+return ( <section className=" relative overflow-hidden bg-white px-6 py-10">
 
 
   {/* Background glow */}
-  <div className="absolute left-1/4 top-0 h-72 w-72 rounded-full bg-[#B5541F]/10 blur-3xl"></div>
-
+  
   <div className="relative flex mx-auto max-w-7xl items-center">
 
 <div>

@@ -68,6 +68,30 @@ const brands = [
     logo: "/images/logo/castrol.png",
     description: "Special oils and lubricants",
   },
+  {
+    name: "Atlas",
+    href: "/products/atlas",
+    logo: "/images/logo/atlas.png",
+    description: "Atlas all-season coolant with anti-rust and anti-freeze protection.",
+  },
+  {
+    name: "Bearing",
+    href: "/products/bearing",
+    logo: "/images/logo/bear.png",
+    description: "Bear Max bearings for dependable, smooth rotation.",
+  },
+  {
+    name: "Grease",
+    href: "/products/grease",
+    logo: "/images/logo/grease.png",
+    description: "Multipurpose and high temperature greases.",
+  },
+  {
+    name: "Guard Filter",
+    href: "/products/guard-filter",
+    logo: "/images/logo/leppon1.png",
+    description: "Guard filters, brake pads and other oil filters.",
+  },
 ];
 
 export default function ProductsPage() {
@@ -79,16 +103,14 @@ export default function ProductsPage() {
     <>
       <Navbar />
 
-      <main className="min-h-screen overflow-hidden bg-[#F5F1E8] text-[#1C1A16]">
+      <main className="min-h-screen overflow-hidden bg-white text-[#1C1A16]">
 
         {/* ================= HERO ================= */}
 
         <section className="relative px-6 py-16">
 
-          <div className="absolute left-1/4 top-0 h-96 w-96 rounded-full bg-[#B5541F]/10 blur-3xl" />
-
-          <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-[#B5541F]/5 blur-3xl" />
-
+          
+          
           <div className="relative mx-auto max-w-5xl text-center">
 
             <p className="mb-5 text-sm font-semibold uppercase tracking-[0.35em] text-[#B5541F]">
@@ -148,8 +170,7 @@ export default function ProductsPage() {
     href={brand.href}
     className="group relative overflow-hidden rounded-2xl border border-[#E4DCC8] bg-white p-6 text-left transition-all duration-500 hover:-translate-y-2 hover:border-[#B5541F]/50 hover:bg-[#B5541F]/5"
   >
-    <div className="absolute -right-10 -top-10 h-28 w-28 rounded-full bg-[#B5541F]/10 blur-3xl transition duration-500 group-hover:bg-[#B5541F]/20" />
-
+    
     <div className="relative flex h-16 w-16 items-center justify-center rounded border border-[#E4DCC8] text-lg font-bold text-[#B5541F] transition-all duration-500 group-hover:scale-110 group-hover:border-[#B5541F]/50  group-hover:text-white">
       <Image
   src={brand.logo}
@@ -186,8 +207,7 @@ export default function ProductsPage() {
 
         <section className="relative overflow-hidden border-t border-[#E4DCC8] px-6 py-24">
 
-          <div className="absolute left-1/2 top-0 h-96 w-96 -translate-x-1/2 rounded-full bg-[#B5541F]/10 blur-3xl" />
-
+          
           <div className="relative mx-auto max-w-5xl rounded-3xl border border-[#B5541F]/20 bg-[#B5541F]/5 px-8 py-16 text-center backdrop-blur-xl">
 
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#B5541F]">

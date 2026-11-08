@@ -13,13 +13,11 @@ export default function BlogPage() {
     <>
       <Navbar />
 
-      <main className="min-h-screen overflow-hidden bg-[#F5F1E8] text-[#1C1A16]">
+      <main className="min-h-screen overflow-hidden bg-white text-[#1C1A16]">
 
         {/* HERO */}
         <section className="relative px-6 py-16 md:py-24">
-          <div className="absolute left-1/4 top-0 h-96 w-96 rounded-full bg-[#B5541F]/10 blur-3xl" />
-          <div className="absolute right-0 top-32 h-72 w-72 rounded-full bg-[#B5541F]/5 blur-3xl" />
-
+                    
           <div className="relative mx-auto max-w-5xl text-center">
             <p className="mb-5 text-sm font-semibold uppercase tracking-[0.35em] text-[#B5541F]">
               HH Traders Blog
@@ -177,8 +175,7 @@ export default function BlogPage() {
         {/* CTA */}
         <section className="relative overflow-hidden border-t border-[#E4DCC8] px-6 py-24">
 
-          <div className="absolute left-1/2 top-0 h-96 w-96 -translate-x-1/2 rounded-full bg-[#B5541F]/10 blur-3xl" />
-
+          
           <div className="relative mx-auto max-w-5xl rounded-3xl border border-[#B5541F]/20 bg-[#B5541F]/5 px-8 py-16 text-center backdrop-blur-xl">
 
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#B5541F]">

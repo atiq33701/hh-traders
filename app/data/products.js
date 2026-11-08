@@ -847,4 +847,194 @@ specifications: [
   ],
 },
 
+{
+  id: 50,
+  category: "Atlas",
+  badge: "Ready-mix",
+  name: "Atlas Coolant Green 1L",
+  description: "Atlas all-season ready-mix coolant in a 1 litre pack with anti-rust and anti-freeze protection.",
+  image: "/images/atlas/atlas1.jpg",
+  specifications: ["1 Litre Pack", "Anti Rust, Anti Freeze", "Ready-mix, All Season"],
+},
+
+{
+  id: 51,
+  category: "Atlas",
+  badge: "Ready-mix",
+  name: "Atlas Coolant Green 4L",
+  description: "Atlas all-season ready-mix coolant in a 4 litre pack, ideal for a full cooling system top-up.",
+  image: "/images/atlas/atlas2.jpg",
+  specifications: ["4 Litre Pack", "Anti Rust, Anti Freeze", "Ready-mix, All Season"],
+},
+
+{
+  id: 52,
+  category: "Atlas",
+  badge: "Ready-mix",
+  name: "Atlas Coolant Red 1L",
+  description: "Atlas all-season ready-mix coolant in red, 1 litre pack with anti-rust and anti-freeze protection.",
+  image: "/images/atlas/atlas3.jpg",
+  specifications: ["1 Litre Pack", "Anti Rust, Anti Freeze", "Ready-mix, All Season"],
+},
+
+{
+  id: 53,
+  category: "Bearing",
+  badge: "Bear Max",
+  name: "Bear Max Bearings (Box Pack)",
+  description: "Bear Max bearings supplied in individual boxes from Bear Max Bearings Corporation.",
+  image: "/images/bearing/bearing1.jpg",
+  specifications: ["Boxed Packing", "Bear Max Bearings Corporation", "Smooth Rotation"],
+},
+
+{
+  id: 54,
+  category: "Bearing",
+  badge: "Bear Max",
+  name: "Bear Max Bearing (Sealed Pack)",
+  description: "Bear Max bearing in sealed protective packing inside the Bear Max box.",
+  image: "/images/bearing/bearing2.jpg",
+  specifications: ["Sealed Protective Packing", "Bear Max Bearings Corporation", "Reliable Performance"],
+},
+
+{
+  id: 55,
+  category: "Grease",
+  badge: "Multipurpose",
+  name: "Perfect Crystal Grease",
+  description: "Perfect multipurpose mineral calcium SD crystal grease for bearings and general lubrication.",
+  image: "/images/grease/grease1.jpg",
+  specifications: ["Multipurpose Mineral Calcium SD Grease", "NLGI Grade 3", "Suitable for Bearings"],
+},
+
+{
+  id: 56,
+  category: "Grease",
+  badge: "Multipurpose",
+  name: "Energy Plus Crystal Grease 500g",
+  description: "Energy Plus multipurpose mineral calcium SD crystal grease in a 500g tub.",
+  image: "/images/grease/grease2.jpg",
+  specifications: ["Net Weight 500g", "NLGI 3", "Multipurpose Mineral Calcium SD Grease"],
+},
+
+{
+  id: 57,
+  category: "Grease",
+  badge: "High Temp",
+  name: "Rollester High Temperature Grease",
+  description: "Rollester high temperature grease rated up to 380\u00b0C for hot, heavily loaded parts.",
+  image: "/images/grease/grease3.jpg",
+  specifications: ["Up to 380°C", "High Temperature Grease", "Metal Tin Packing"],
+},
+
+{
+  id: 58,
+  category: "Grease",
+  badge: "High Temp",
+  name: "Rollester High Temperature Grease (Tall Tin)",
+  description: "Rollester high temperature grease rated up to 380\u00b0C in a taller tin pack.",
+  image: "/images/grease/grease4.jpg",
+  specifications: ["Up to 380°C", "High Temperature Grease", "Metal Tin Packing"],
+},
+
+{
+  id: 59,
+  category: "Guard Filter",
+  badge: "Guard",
+  name: "Guard GDO-506A Oil Filter",
+  description: "Guard oil filter for Ford 3000-4000 and Massey Ferguson 265/375 tractors. Replaces D8NN-6714-GA, E8NN-6714-AA and 2654403.",
+  image: "/images/guard-filter/filter1.jpg",
+  specifications: ["Ford Tractor 3000 - 4000", "Massey Ferguson 265 / 375", "ISO 9001 and 14001 Certified"],
+},
+
+{
+  id: 60,
+  category: "Guard Filter",
+  badge: "Guard",
+  name: "Guard GDO-508 Oil Filter",
+  description: "Guard oil filter for Fiat tractors 480 - 640. Replaces 9.28.010.00 and 1909101.",
+  image: "/images/guard-filter/filter2.jpg",
+  specifications: ["Fiat Tractors 480 - 640", "Rep. Gen. No. 9.28.010.00 / 1909101", "ISO 9001 and 14001 Certified"],
+},
+
+{
+  id: 61,
+  category: "Guard Filter",
+  badge: "Guard",
+  name: "Guard GDF-402-A Diesel Filter",
+  description: "Diesel Guard filter replacing CAV 7111-296, suitable for Bedford, Fiat, Ford, Massey Ferguson and Ursus engines.",
+  image: "/images/guard-filter/filter3.jpg",
+  specifications: ["Replaces CAV 7111-296", "Bedford, Fiat, Ford, Massey Ferguson, Ursus", "Can be modified for Mazda T-3000 / T-3500"],
+},
+
+{
+  id: 62,
+  category: "Guard Filter",
+  badge: "Guard",
+  name: "Guard Disc Brake Pads",
+  description: "Guard disc brake pads, available alongside the full Guard filter range.",
+  image: "/images/guard-filter/filter4.jpg",
+  specifications: ["Disc Brake Pads", "Guard Quality", "Wide Vehicle Range"],
+},
+
+{
+  id: 63,
+  category: "Guard Filter",
+  badge: "Zix",
+  name: "Zix ZC-562 Oil Filter",
+  description: "Zix performance oil filter ZC-562, Suzuki part no. 16501-82700.",
+  image: "/images/guard-filter/filter5.jpg",
+  specifications: ["Suzuki Part No. 16501-82700", "Handles Synthetic, Conventional and Blended Oils", "Made in Pakistan"],
+},
+
+{
+  id: 64,
+  category: "Guard Filter",
+  badge: "Zix",
+  name: "Zix Oil Filter (Mitsubishi MD-069782)",
+  description: "Zix performance oil filter, Mitsubishi part no. MD-069782 for Pajero 1989-1992.",
+  image: "/images/guard-filter/filter6.jpg",
+  specifications: ["Mitsubishi Part No. MD-069782", "Pajero 1989 - 1992", "Performance Oil Filter"],
+},
+
+{
+  id: 65,
+  category: "Guard Filter",
+  badge: "Leppon",
+  name: "Leppon ECO Oil Filter 26350-2M000",
+  description: "Leppon ECO oil filter, part number 26350-2M000, quality replacement part.",
+  image: "/images/guard-filter/filter7.jpg",
+  specifications: ["Part No. 26350-2M000", "ECO Series", "Q.E.S. Replacement Parts"],
+},
+
+{
+  id: 66,
+  category: "Guard Filter",
+  badge: "Leppon",
+  name: "Leppon ECO Oil Filter OP-10117",
+  description: "Leppon ECO oil filter OP-10117 for Toyota, OEM number 04152-40060.",
+  image: "/images/guard-filter/filter8.jpg",
+  specifications: ["OEM No. 04152-40060", "For Toyota", "Q.E.S. Replacement Parts"],
+},
+
+{
+  id: 67,
+  category: "Guard Filter",
+  badge: "Leppon",
+  name: "Leppon Oil Filter OT-00930",
+  description: "Leppon oil filter model OT-00930, a quality replacement part.",
+  image: "/images/guard-filter/filter9.jpg",
+  specifications: ["Model OT-00930", "Q.E.S. Replacement Parts", "1 Piece Unit"],
+},
+
+{
+  id: 68,
+  category: "Guard Filter",
+  badge: "Leppon",
+  name: "Leppon Oil Filter",
+  description: "Leppon oil filter in a single piece pack, a quality replacement part.",
+  image: "/images/guard-filter/filter10.jpg",
+  specifications: ["1 Piece Unit", "Q.E.S. Replacement Parts", "Reliable Quality"],
+},
+
 ];

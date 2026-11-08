@@ -9,15 +9,13 @@ return (
 <> <Navbar />
 
 
-  <main className="overflow-hidden bg-[#F5F1E8] text-[#1C1A16]">
+  <main className="overflow-hidden bg-white text-[#1C1A16]">
 
     {/* ================= HERO SECTION ================= */}
     <section className="relative px-6 py-16">
 
       {/* Background Glow */}
-      <div className="absolute left-1/4 top-0 h-96 w-96 rounded-full bg-[#B5541F]/10 blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-[#B5541F]/5 blur-3xl"></div>
-
+            
       <div className="relative mx-auto max-w-7xl text-center">
 
         <p className="mb-5 text-sm font-semibold uppercase tracking-[0.35em] text-[#B5541F]">
@@ -67,8 +65,7 @@ return (
 
           </div>
 
-          <div className="absolute -bottom-8 -right-8 -z-10 h-40 w-40 rounded-full bg-[#B5541F]/15 blur-3xl"></div>
-
+          
         </div>
 
 
@@ -251,8 +248,7 @@ return (
     {/* ================= CONTACT CTA ================= */}
     <section className="relative overflow-hidden px-6 py-24">
 
-      <div className="absolute left-1/2 top-0 h-96 w-96 -translate-x-1/2 rounded-full bg-[#B5541F]/10 blur-3xl"></div>
-
+      
       <div className="relative mx-auto max-w-4xl rounded-3xl border border-[#B5541F]/20 bg-[#B5541F]/5 px-8 py-16 text-center backdrop-blur-xl">
 
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#B5541F]">
