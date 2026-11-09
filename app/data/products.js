@@ -1067,4 +1067,114 @@ specifications: [
   specifications: ["Model DAC4074W-3CS80", "Wheel Hub Bearing", "Protective Wrapped Packing"],
 },
 
+{
+  id: 74,
+  category: "Shell",
+  badge: "Helix HX3",
+  name: "Shell Helix HX3 20W-50",
+  description: "Shell Helix HX3 20W-50 multi-grade motor oil for gasoline engines, in a 4 litre pack.",
+  image: "/images/shell/shell2.jpg",
+  specifications: ["4 Litre Pack", "SAE 20W-50", "Multi-Grade Motor Oil"],
+},
+
+{
+  id: 75,
+  category: "Shell",
+  badge: "Helix Ultra",
+  name: "Shell Helix Ultra 5W-40",
+  description: "Shell Helix Ultra 5W-40 fully synthetic motor oil for diesel and gasoline engines, in a 4 litre pack.",
+  image: "/images/shell/shell3.jpg",
+  specifications: ["4 Litre Pack", "SAE 5W-40", "Fully Synthetic, API SN/CF, ACEA A3/B4"],
+},
+
+{
+  id: 76,
+  category: "Shell",
+  badge: "Helix HX6",
+  name: "Shell Helix HX6 10W-40",
+  description: "Shell Helix HX6 10W-40 synthetic technology motor oil with active protection and active cleansing, in a 4 litre pack.",
+  image: "/images/shell/shell4.jpg",
+  specifications: ["4 Litre Pack", "SAE 10W-40", "Synthetic Technology Motor Oil"],
+},
+
+{
+  id: 77,
+  category: "Shell",
+  badge: "Rimula",
+  name: "Shell Rimula R2 Extra 15W-40",
+  description: "Shell Rimula R2 Extra 15W-40 heavy duty diesel engine oil with turbocharger performance and dynamic protection, in a 4 litre pack.",
+  image: "/images/shell/shell5.jpg",
+  specifications: ["4 Litre Pack", "SAE 15W-40", "Heavy Duty Diesel Engine Oil"],
+},
+
+{
+  id: 78,
+  category: "Shell",
+  badge: "Helix HX3",
+  name: "Shell Helix HX3 SAE-40",
+  description: "Shell Helix HX3 SAE-40 mono-grade motor oil that cleans and protects older engines, in a 4 litre pack.",
+  image: "/images/shell/shell6.jpg",
+  specifications: ["4 Litre Pack", "SAE 40", "Mono-Grade Motor Oil"],
+},
+
+{
+  id: 79,
+  category: "Shell",
+  badge: "Helix Ultra",
+  name: "Shell Helix Ultra 0W-20 SN",
+  description: "Shell Helix Ultra 0W-20 SN fully synthetic motor oil for gasoline engines, with fuel economy benefits, in a 4 litre pack.",
+  image: "/images/shell/shell1.jpg",
+  specifications: ["4 Litre Pack", "SAE 0W-20, API SN", "Fully Synthetic Motor Oil"],
+},
+
+{
+  id: 80,
+  category: "Harris",
+  badge: "Klink",
+  name: "Klink Carnauba Wax",
+  description: "Klink Carnauba Wax in a tube pack that shines, protects and renews with a high gloss shine, for cars and motorcycles. A product of Harris Silicones & Glass (Pvt) Ltd.",
+  image: "/images/harris/harris1.jpeg",
+  specifications: ["Shines - Protects - Renews", "High Gloss Shine", "For Car and Bike Use"],
+},
+
+{
+  id: 81,
+  category: "Harris",
+  badge: "Klink",
+  name: "Klink Protectant Jasmine (10 Sachet Pack)",
+  description: "Klink Protectant automotive surface protectant in jasmine fragrance, supplied in 10 sachet packs. A product of Harris Silicones & Glass (Pvt) Ltd.",
+  image: "/images/harris/harris2.jpeg",
+  specifications: ["10 Sachet Pack", "Jasmine Fragrance", "For Vinyl, Rubber, Leather and Plastic"],
+},
+
+{
+  id: 82,
+  category: "Harris",
+  badge: "Harris",
+  name: "Harris Genuine Gray Gasket Maker",
+  description: "Harris Genuine Gray automotive gasket maker, a high temperature sealant available in 25g and 60g tubes.",
+  image: "/images/harris/harris3.jpeg",
+  specifications: ["Automotive Gasket Maker", "High Temperature", "25g and 60g Tubes"],
+},
+
+{
+  id: 83,
+  category: "Harris",
+  badge: "MK Kashiyama",
+  name: "MK Kashiyama Asbestos-Free Brake Pads",
+  description: "MK Kashiyama asbestos-free brake pads, guaranteed by MK Kashiyama Corp. Japan, available in part numbers D9074M, D9026, D2254M, D2252, D2274 and D5198M-01 (Honda).",
+  image: "/images/harris/harris4.jpeg",
+  specifications: ["Asbestos Free", "MK Kashiyama Corp. Japan", "Part Nos. D9074M, D9026, D2254M, D2252, D2274, D5198M-01"],
+},
+
+{
+  id: 84,
+  category: "Harris",
+  badge: "MK Kashiyama",
+  name: "MK Kashiyama Brake Pads & Shoes",
+  description: "MK Kashiyama brake pads and brake shoes, guaranteed by MK Kashiyama Corp. Japan, available in part numbers K7728, D2228M and K9910 (Suzuki).",
+  image: "/images/harris/harris5.jpeg",
+  specifications: ["Brake Pads and Brake Shoes", "MK Kashiyama Corp. Japan", "Part Nos. K7728, D2228M, K9910"],
+},
+
 ];

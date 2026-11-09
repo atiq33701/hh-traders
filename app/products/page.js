@@ -85,6 +85,19 @@ const brands = [
     href: "/products/koyo-bearing",
     logo: "/images/logo/koyo.png",
     description: "Genuine Koyo ball and wheel bearings.",
+
+  },
+  {
+    name: "Shell",
+    href: "/products/shell",
+    logo: "/images/logo/shell.png",
+    description: "Shell Helix and Rimula engine oils.",
+  },
+  {
+    name: "Harris",
+    href: "/products/harris",
+    logo: "/images/logo/harris.png",
+    description: "Klink car care, gasket maker and brake pads.",
   },
   {
     name: "Grease",
