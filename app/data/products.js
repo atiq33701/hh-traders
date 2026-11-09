@@ -898,7 +898,7 @@ specifications: [
 },
 
 {
-  id: 55,
+  id: 57,
   category: "Grease",
   badge: "Multipurpose",
   name: "Perfect Crystal Grease",
@@ -908,7 +908,7 @@ specifications: [
 },
 
 {
-  id: 56,
+  id: 58,
   category: "Grease",
   badge: "Multipurpose",
   name: "Energy Plus Crystal Grease 500g",
@@ -918,7 +918,7 @@ specifications: [
 },
 
 {
-  id: 57,
+  id: 59,
   category: "Grease",
   badge: "High Temp",
   name: "Rollester High Temperature Grease",
@@ -928,7 +928,7 @@ specifications: [
 },
 
 {
-  id: 58,
+  id: 60,
   category: "Grease",
   badge: "High Temp",
   name: "Rollester High Temperature Grease (Tall Tin)",
@@ -938,7 +938,7 @@ specifications: [
 },
 
 {
-  id: 59,
+  id: 61,
   category: "Guard Filter",
   badge: "Guard",
   name: "Guard GDO-506A Oil Filter",
@@ -948,7 +948,7 @@ specifications: [
 },
 
 {
-  id: 60,
+  id: 62,
   category: "Guard Filter",
   badge: "Guard",
   name: "Guard GDO-508 Oil Filter",
@@ -958,7 +958,7 @@ specifications: [
 },
 
 {
-  id: 61,
+  id: 63,
   category: "Guard Filter",
   badge: "Guard",
   name: "Guard GDF-402-A Diesel Filter",
@@ -968,7 +968,7 @@ specifications: [
 },
 
 {
-  id: 62,
+  id: 64,
   category: "Guard Filter",
   badge: "Guard",
   name: "Guard Disc Brake Pads",
@@ -978,7 +978,7 @@ specifications: [
 },
 
 {
-  id: 63,
+  id: 65,
   category: "Guard Filter",
   badge: "Zix",
   name: "Zix ZC-562 Oil Filter",
@@ -988,7 +988,7 @@ specifications: [
 },
 
 {
-  id: 64,
+  id: 66,
   category: "Guard Filter",
   badge: "Zix",
   name: "Zix Oil Filter (Mitsubishi MD-069782)",
@@ -998,7 +998,7 @@ specifications: [
 },
 
 {
-  id: 65,
+  id: 67,
   category: "Guard Filter",
   badge: "Leppon",
   name: "Leppon ECO Oil Filter 26350-2M000",
@@ -1008,7 +1008,7 @@ specifications: [
 },
 
 {
-  id: 66,
+  id: 68,
   category: "Guard Filter",
   badge: "Leppon",
   name: "Leppon ECO Oil Filter OP-10117",
@@ -1018,7 +1018,7 @@ specifications: [
 },
 
 {
-  id: 67,
+  id: 69,
   category: "Guard Filter",
   badge: "Leppon",
   name: "Leppon Oil Filter OT-00930",
@@ -1028,13 +1028,43 @@ specifications: [
 },
 
 {
-  id: 68,
+  id: 70,
   category: "Guard Filter",
   badge: "Leppon",
   name: "Leppon Oil Filter",
   description: "Leppon oil filter in a single piece pack, a quality replacement part.",
   image: "/images/guard-filter/filter10.jpg",
   specifications: ["1 Piece Unit", "Q.E.S. Replacement Parts", "Reliable Quality"],
+},
+
+{
+  id: 71,
+  category: "Bearing",
+  badge: "Koyo Bearing",
+  name: "Koyo RLS62RS Sealed Ball Bearing",
+  description: "Koyo RLS62RS rubber-sealed deep groove ball bearing, supplied in the original Koyo box.",
+  image: "/images/bearing/bearing3.jpg",
+  specifications: ["Model RLS62RS", "Rubber Sealed (2RS)", "Original Koyo Box Packing"],
+},
+
+{
+  id: 72,
+  category: "Bearing",
+  badge: "Koyo Bearing",
+  name: "Koyo 6202 Ball Bearing",
+  description: "Koyo 6202 series ball bearing in original Koyo box packing for smooth, reliable rotation.",
+  image: "/images/bearing/bearing4.jpg",
+  specifications: ["Model 6202/1B2RMXCS11-AM", "Original Koyo Box Packing", "Smooth Rotation"],
+},
+
+{
+  id: 73,
+  category: "Bearing",
+  badge: "Koyo Bearing",
+  name: "Koyo DAC4074W-3CS80 Wheel Bearing",
+  description: "Koyo DAC4074W-3CS80 automotive wheel hub bearing, supplied in protective wrap inside the Koyo box.",
+  image: "/images/bearing/bearing5.jpg",
+  specifications: ["Model DAC4074W-3CS80", "Wheel Hub Bearing", "Protective Wrapped Packing"],
 },
 
 ];

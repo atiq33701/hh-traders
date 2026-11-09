@@ -63,11 +63,11 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`group relative rounded-lg px-4 py-2 text-sm font-medium transition-all duration-300 ${
-                  isActive
-                    ? "bg-[#FFF4EF] text-[#B5541F]"
-                    : "text-[#374151] hover:bg-[#FFF4EF] hover:text-[#B5541F]"
-                }`}
+         className={`group relative rounded-lg border border-transparent px-4 py-2 text-sm font-medium transition-all duration-300 ${
+  isActive
+    ? "border-[#E5B8A5] bg-[#FFF4EF] text-[#B5541F]"
+    : "text-[#374151] hover:border-[#E5B8A5] hover:bg-[#FFF4EF] hover:text-[#B5541F]"
+}`}
               >
                 {link.name}
 
