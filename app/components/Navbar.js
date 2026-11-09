@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -21,7 +22,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-[#E4DCC8] bg-[#F3F3F0] backdrop-blur-xl">
+  <nav className="sticky top-0 z-50 border-b border-[#E5E7EB] bg-[#F3F4F6]">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
 
         {/* Logo */}
@@ -31,7 +32,7 @@ export default function Navbar() {
           onClick={closeMenu}
         >
           {/* Logo Icon */}
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-[#B5541F]/30 bg-[#B5541F]/10 shadow-lg shadow-[#B5541F]/10 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-[#B5541F]/20 bg-white shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
             <Image
               className="h-full w-full object-cover"
               src="/images/logo/logo.jpeg"
@@ -47,7 +48,7 @@ export default function Navbar() {
               HH <span className="text-[#B5541F]">Traders</span>
             </span>
 
-            <span className="text-[8px] font-medium uppercase tracking-[0.12em] text-[#8A8270] sm:text-[10px] sm:tracking-[0.2em]">
+            <span className="text-[8px] font-medium uppercase tracking-[0.12em] text-[#6B7280] sm:text-[10px] sm:tracking-[0.2em]">
               Filters and Lubricants Dealer
             </span>
           </div>
@@ -55,7 +56,6 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <div className="hidden items-center gap-2 md:flex">
-
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
 
@@ -65,8 +65,8 @@ export default function Navbar() {
                 href={link.href}
                 className={`group relative rounded-lg px-4 py-2 text-sm font-medium transition-all duration-300 ${
                   isActive
-                    ? "bg-[#B5541F]/10 text-[#B5541F]"
-                    : "text-[#5C574B] hover:bg-[#B5541F]/5 hover:text-[#1C1A16]"
+                    ? "bg-[#FFF4EF] text-[#B5541F]"
+                    : "text-[#374151] hover:bg-[#FFF4EF] hover:text-[#B5541F]"
                 }`}
               >
                 {link.name}
@@ -81,10 +81,10 @@ export default function Navbar() {
             );
           })}
 
-          {/* Contact Button - NOT treated as active */}
+          {/* Contact Button */}
           <Link
             href="/contact"
-            className="ml-3 flex items-center gap-2 rounded-xl bg-[#B5541F] px-5 py-2.5 text-sm font-semibold text-[#F5F1E8] shadow-lg shadow-[#B5541F]/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#943F14] hover:shadow-xl hover:shadow-[#B5541F]/30 active:translate-y-0 active:scale-95"
+            className="ml-3 flex items-center gap-2 rounded-xl bg-[#B5541F] px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-[#B5541F]/15 transition-all duration-300 hover:-translate-y-1 hover:bg-[#943F14] hover:shadow-lg active:translate-y-0 active:scale-95"
           >
             Contact Us
             <span>→</span>
@@ -94,7 +94,7 @@ export default function Navbar() {
         {/* Mobile Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="flex h-11 w-11 items-center justify-center rounded-xl border border-[#E4DCC8] bg-white text-2xl text-[#1C1A16] transition duration-300 hover:bg-[#B5541F] hover:text-white md:hidden"
+          className="flex h-11 w-11 items-center justify-center rounded-xl border border-[#E5E7EB] bg-white text-2xl text-[#374151] transition duration-300 hover:border-[#B5541F] hover:bg-[#FFF4EF] hover:text-[#B5541F] md:hidden"
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
         >
@@ -104,9 +104,8 @@ export default function Navbar() {
 
       {/* Mobile Navigation */}
       {menuOpen && (
-        <div className="border-t border-[#E4DCC8] bg-[#F5F1E8] px-4 pb-6 pt-4 md:hidden">
+        <div className="border-t border-[#E5E7EB] bg-white px-4 pb-6 pt-4 md:hidden">
           <div className="mx-auto flex max-w-7xl flex-col gap-2">
-
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
 
@@ -117,8 +116,8 @@ export default function Navbar() {
                   onClick={closeMenu}
                   className={`rounded-xl px-5 py-3 font-medium transition ${
                     isActive
-                      ? "bg-[#B5541F]/10 text-[#B5541F]"
-                      : "text-[#5C574B] hover:bg-[#B5541F]/5 hover:text-[#1C1A16]"
+                      ? "bg-[#FFF4EF] text-[#B5541F]"
+                      : "text-[#374151] hover:bg-[#FFF4EF] hover:text-[#B5541F]"
                   }`}
                 >
                   <div className="flex items-center justify-between">
@@ -132,11 +131,11 @@ export default function Navbar() {
               );
             })}
 
-            {/* Contact Button - Always normal */}
+            {/* Contact Button */}
             <Link
               href="/contact"
               onClick={closeMenu}
-              className="mt-3 rounded-xl bg-[#B5541F] px-5 py-3 text-center font-semibold text-[#F5F1E8] transition hover:bg-[#943F14]"
+              className="mt-3 rounded-xl bg-[#B5541F] px-5 py-3 text-center font-semibold text-white transition hover:bg-[#943F14]"
             >
               Contact Us →
             </Link>
