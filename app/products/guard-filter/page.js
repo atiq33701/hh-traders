@@ -55,14 +55,14 @@ export default function GuardFilterProductsPage() {
             </p>
 
             <h1 className="mt-5 text-5xl font-bold leading-tight sm:text-6xl md:text-7xl">
-              Guard Filter
+              Guard
               <span className="block text-[#B5541F]">
                 Filters
               </span>
             </h1>
 
             <p className="mx-auto mt-7 max-w-3xl text-base leading-7 text-[#5C574B] sm:text-lg">
-              Explore our available Guard filters and other oil and diesel filters for reliable engine protection.
+              Explore our available Guard oil and diesel filters and disc brake pads for reliable engine protection.
             </p>
 
           </div>

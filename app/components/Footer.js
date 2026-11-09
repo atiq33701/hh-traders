@@ -2,7 +2,7 @@
 "use client";
 
 import Link from "next/link";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -84,6 +84,32 @@ export default function Footer() {
               </span>
 
               <span>sami1981.rot@gmail.com</span>
+            </a>
+
+            {/* WhatsApp */}
+            <a
+              href="https://wa.me/923006760571"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group mt-4 inline-flex items-center gap-3 text-[#4B5563] transition duration-300 hover:text-[#B5541F]"
+            >
+              <span className="flex h-10 w-10 items-center justify-center rounded-full border border-[#E5E7EB] bg-white text-[#B5541F] transition-all duration-300 group-hover:border-[#B5541F] group-hover:bg-[#FFF4EF]">
+                <Phone size={20} />
+              </span>
+
+              <span>WhatsApp: +92 300 6760571</span>
+            </a>
+            <a
+              href="https://wa.me/923000140571"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group mt-4 inline-flex items-center gap-3 text-[#4B5563] transition duration-300 hover:text-[#B5541F]"
+            >
+              <span className="flex h-10 w-10 items-center justify-center rounded-full border border-[#E5E7EB] bg-white text-[#B5541F] transition-all duration-300 group-hover:border-[#B5541F] group-hover:bg-[#FFF4EF]">
+                <Phone size={20} />
+              </span>
+
+              <span>WhatsApp: +92 300 0140571</span>
             </a>
 
             {/* Social Media */}

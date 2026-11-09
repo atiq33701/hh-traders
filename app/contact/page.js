@@ -82,10 +82,7 @@ return (
 
 
         {/* Phone */}
-           <a
-                href="https://wa.me/923000140571"
-                target="_blank"
-                rel="noopener noreferrer"
+           <div
                 className="group rounded-3xl border border-[#E4DCC8] bg-white p-8 transition-all duration-500 hover:-translate-y-3 hover:border-green-500/50 hover:bg-green-50"
               >
 
@@ -103,11 +100,25 @@ return (
             availability.
           </p>
 
-          <p className="mt-6 text-lg font-semibold text-green-700">
+          <a
+            href="https://wa.me/923000140571"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 block w-fit text-lg font-semibold text-green-700 hover:underline"
+          >
             +92 300 0140571
-          </p>
+          </a>
 
-        </a>
+          <a
+            href="https://wa.me/923006760571"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 block w-fit text-lg font-semibold text-green-700 hover:underline"
+          >
+            +92 300 6760571
+          </a>
+
+        </div>
 
 
         {/* Email */}
@@ -198,13 +209,7 @@ return (
           <div className="mt-5 space-y-5">
 
 
-                <Link
-                href="https://wa.me/923000140571"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex gap-5 rounded-2xl border border-[#E4DCC8] bg-white p-5 transition duration-300 hover:border-green-500/40"
-              >
-
+                <div className="flex gap-5 rounded-2xl border border-[#E4DCC8] bg-white p-5 transition duration-300 hover:border-green-500/40">
 
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-green-600/10 text-xl">
                 <Phone className="h-5 w-5 text-green-600" />
@@ -214,9 +219,24 @@ return (
                 <p className="font-semibold">
                   Phone Number
                 </p>
-<span className="text-[#5C574B]">+92 3000140571</span>
+                <a
+                  href="https://wa.me/923000140571"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-[#5C574B] hover:text-green-700"
+                >
+                  +92 3000140571
+                </a>
+                <a
+                  href="https://wa.me/923006760571"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-[#5C574B] hover:text-green-700"
+                >
+                  +92 3006760571
+                </a>
+              </div>
             </div>
-              </Link>
 
 
               <Link

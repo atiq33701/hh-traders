@@ -85,7 +85,6 @@ const brands = [
     href: "/products/koyo-bearing",
     logo: "/images/logo/koyo.png",
     description: "Genuine Koyo ball and wheel bearings.",
-
   },
   {
     name: "Shell",
@@ -98,6 +97,14 @@ const brands = [
     href: "/products/harris",
     logo: "/images/logo/harris.png",
     description: "Klink car care, gasket maker and brake pads.",
+
+    description: "Klink car care products and Genuine Gray gasket maker.",
+  },
+  {
+    name: "MK Disk",
+    href: "/products/mk-disk",
+    logo: "/images/logo/mk disk.jpg",
+    description: "MK Kashiyama brake pads and brake shoes.",
   },
   {
     name: "Grease",
@@ -106,10 +113,22 @@ const brands = [
     description: "Multipurpose and high temperature greases.",
   },
   {
-    name: "Guard Filter",
+    name: "Guard Filters",
     href: "/products/guard-filter",
+    logo: "/images/logo/guard filter.png",
+    description: "Guard oil filters, diesel filters and disc brake pads.",
+  },
+  {
+    name: "Leppon Filters",
+    href: "/products/leppon-filter",
     logo: "/images/logo/leppon1.png",
-    description: "Guard filters, brake pads and other oil filters.",
+    description: "Leppon ECO and standard oil filters.",
+  },
+  {
+    name: "Zix Filters",
+    href: "/products/zix-filter",
+    logo: "/images/logo/zix.png",
+    description: "Zix performance oil filters.",
   },
 ];
 

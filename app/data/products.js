@@ -979,7 +979,7 @@ specifications: [
 
 {
   id: 65,
-  category: "Guard Filter",
+  category: "Zix Filter",
   badge: "Zix",
   name: "Zix ZC-562 Oil Filter",
   description: "Zix performance oil filter ZC-562, Suzuki part no. 16501-82700.",
@@ -989,7 +989,7 @@ specifications: [
 
 {
   id: 66,
-  category: "Guard Filter",
+  category: "Zix Filter",
   badge: "Zix",
   name: "Zix Oil Filter (Mitsubishi MD-069782)",
   description: "Zix performance oil filter, Mitsubishi part no. MD-069782 for Pajero 1989-1992.",
@@ -999,7 +999,7 @@ specifications: [
 
 {
   id: 67,
-  category: "Guard Filter",
+  category: "Leppon Filter",
   badge: "Leppon",
   name: "Leppon ECO Oil Filter 26350-2M000",
   description: "Leppon ECO oil filter, part number 26350-2M000, quality replacement part.",
@@ -1009,7 +1009,7 @@ specifications: [
 
 {
   id: 68,
-  category: "Guard Filter",
+  category: "Leppon Filter",
   badge: "Leppon",
   name: "Leppon ECO Oil Filter OP-10117",
   description: "Leppon ECO oil filter OP-10117 for Toyota, OEM number 04152-40060.",
@@ -1019,7 +1019,7 @@ specifications: [
 
 {
   id: 69,
-  category: "Guard Filter",
+  category: "Leppon Filter",
   badge: "Leppon",
   name: "Leppon Oil Filter OT-00930",
   description: "Leppon oil filter model OT-00930, a quality replacement part.",
@@ -1029,7 +1029,7 @@ specifications: [
 
 {
   id: 70,
-  category: "Guard Filter",
+  category: "Leppon Filter",
   badge: "Leppon",
   name: "Leppon Oil Filter",
   description: "Leppon oil filter in a single piece pack, a quality replacement part.",
@@ -1159,7 +1159,11 @@ specifications: [
 
 {
   id: 83,
+<<<<<<< HEAD
   category: "Harris",
+=======
+  category: "MK Disk",
+>>>>>>> 1e7eb80 (Added products cards)
   badge: "MK Kashiyama",
   name: "MK Kashiyama Asbestos-Free Brake Pads",
   description: "MK Kashiyama asbestos-free brake pads, guaranteed by MK Kashiyama Corp. Japan, available in part numbers D9074M, D9026, D2254M, D2252, D2274 and D5198M-01 (Honda).",
@@ -1169,7 +1173,11 @@ specifications: [
 
 {
   id: 84,
+<<<<<<< HEAD
   category: "Harris",
+=======
+  category: "MK Disk",
+>>>>>>> 1e7eb80 (Added products cards)
   badge: "MK Kashiyama",
   name: "MK Kashiyama Brake Pads & Shoes",
   description: "MK Kashiyama brake pads and brake shoes, guaranteed by MK Kashiyama Corp. Japan, available in part numbers K7728, D2228M and K9910 (Suzuki).",
