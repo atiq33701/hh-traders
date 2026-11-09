@@ -22,7 +22,7 @@ export default function Navbar() {
   ];
 
   return (
-  <nav className="sticky top-0 z-50 border-b border-[#E5E7EB] bg-[#F3F4F6]">
+  <nav className="sticky top-0 z-50 border-b border-[#E5E7EB] bg-[#f5f9f9]">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
 
         {/* Logo */}
