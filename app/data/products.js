@@ -1159,11 +1159,8 @@ specifications: [
 
 {
   id: 83,
-<<<<<<< HEAD
   category: "Harris",
-=======
   category: "MK Disk",
->>>>>>> 1e7eb80 (Added products cards)
   badge: "MK Kashiyama",
   name: "MK Kashiyama Asbestos-Free Brake Pads",
   description: "MK Kashiyama asbestos-free brake pads, guaranteed by MK Kashiyama Corp. Japan, available in part numbers D9074M, D9026, D2254M, D2252, D2274 and D5198M-01 (Honda).",
@@ -1173,11 +1170,8 @@ specifications: [
 
 {
   id: 84,
-<<<<<<< HEAD
   category: "Harris",
-=======
   category: "MK Disk",
->>>>>>> 1e7eb80 (Added products cards)
   badge: "MK Kashiyama",
   name: "MK Kashiyama Brake Pads & Shoes",
   description: "MK Kashiyama brake pads and brake shoes, guaranteed by MK Kashiyama Corp. Japan, available in part numbers K7728, D2228M and K9910 (Suzuki).",
