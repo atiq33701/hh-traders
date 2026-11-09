@@ -62,7 +62,7 @@ export default function BearingProductsPage() {
             </h1>
 
             <p className="mx-auto mt-7 max-w-3xl text-base leading-7 text-[#5C574B] sm:text-lg">
-              Explore our available Bear Max and Koyo bearings built for smooth running and long service life.
+              Explore our available Bear Max bearings built for smooth running and long service life.
             </p>
 
           </div>

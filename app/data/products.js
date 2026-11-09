@@ -1039,7 +1039,7 @@ specifications: [
 
 {
   id: 71,
-  category: "Bearing",
+  category: "Koyo Bearing",
   badge: "Koyo Bearing",
   name: "Koyo RLS62RS Sealed Ball Bearing",
   description: "Koyo RLS62RS rubber-sealed deep groove ball bearing, supplied in the original Koyo box.",
@@ -1049,7 +1049,7 @@ specifications: [
 
 {
   id: 72,
-  category: "Bearing",
+  category: "Koyo Bearing",
   badge: "Koyo Bearing",
   name: "Koyo 6202 Ball Bearing",
   description: "Koyo 6202 series ball bearing in original Koyo box packing for smooth, reliable rotation.",
@@ -1059,7 +1059,7 @@ specifications: [
 
 {
   id: 73,
-  category: "Bearing",
+  category: "Koyo Bearing",
   badge: "Koyo Bearing",
   name: "Koyo DAC4074W-3CS80 Wheel Bearing",
   description: "Koyo DAC4074W-3CS80 automotive wheel hub bearing, supplied in protective wrap inside the Koyo box.",

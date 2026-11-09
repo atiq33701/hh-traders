@@ -78,7 +78,13 @@ const brands = [
     name: "Bearing",
     href: "/products/bearing",
     logo: "/images/logo/bear.png",
-    description: "Bear Max and Koyo bearings for dependable, smooth rotation.",
+    description: "Bear Max bearings for dependable, smooth rotation.",
+  },
+  {
+    name: "Koyo Bearings",
+    href: "/products/koyo-bearing",
+    logo: "/images/logo/koyo.png",
+    description: "Genuine Koyo ball and wheel bearings.",
   },
   {
     name: "Grease",
