@@ -6,9 +6,11 @@ import Link from "next/link";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { products } from "../../data/products";
+import { ProductTags, RoleTag, GroupChips } from "../../components/ProductTags";
 
 export default function PakSuzukiProductsPage() {
   const [search, setSearch] = useState("");
+  const [group, setGroup] = useState("All");
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   const suzukiProducts = products
@@ -21,9 +23,10 @@ export default function PakSuzukiProductsPage() {
           .toLowerCase()
           .includes(search.toLowerCase());
 
-      return matchesCategory && matchesSearch;
-    })
-    .slice(0, 6);
+      const matchesGroup = group === "All" || product.group === group;
+
+      return matchesCategory && matchesSearch && matchesGroup;
+    });
 
   return (
     <>
@@ -43,6 +46,7 @@ export default function PakSuzukiProductsPage() {
             >
               ← Back to Products
             </Link>
+            <RoleTag category="Pak Suzuki" className="ml-3" />
           </div>
 
           {/* HERO CONTENT */}
@@ -81,6 +85,8 @@ export default function PakSuzukiProductsPage() {
               onChange={(e) => setSearch(e.target.value)}
               className="w-full rounded-2xl border border-[#E4DCC8] bg-white px-6 py-5 text-[#1C1A16] outline-none placeholder:text-[#5C574B] focus:border-[#B5541F]"
             />
+
+              <GroupChips category="Pak Suzuki" value={group} onChange={setGroup} />
 
           </div>
 
@@ -142,6 +148,8 @@ export default function PakSuzukiProductsPage() {
                         {product.name}
                       </h3>
 
+                      <ProductTags product={product} />
+
                       <p className="mt-4 line-clamp-2 text-[#5C574B]">
                         {product.description}
                       </p>
@@ -181,7 +189,7 @@ export default function PakSuzukiProductsPage() {
                 </h3>
 
                 <button
-                  onClick={() => setSearch("")}
+                  onClick={() => { setSearch(""); setGroup("All"); }}
                   className="mt-6 rounded-xl bg-[#B5541F] px-6 py-3 font-semibold text-[#F5F1E8]"
                 >
                   Clear Search
@@ -241,6 +249,8 @@ export default function PakSuzukiProductsPage() {
                   <h2 className="mt-3 text-4xl font-bold">
                     {selectedProduct.name}
                   </h2>
+
+                  <ProductTags product={selectedProduct} />
 
                   {/* PRICE */}
                   <div className="mt-6 rounded-2xl border border-[#B5541F]/20 bg-[#B5541F]/5 p-5">

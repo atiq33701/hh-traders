@@ -8,6 +8,7 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 import { products } from "../../data/products";
+import { ProductTags, RoleTag } from "../../components/ProductTags";
 
 export default function HaganProductsPage() {
   const [search, setSearch] = useState("");
@@ -23,8 +24,7 @@ export default function HaganProductsPage() {
         product.description.toLowerCase().includes(search.toLowerCase());
 
       return matchesCategory && matchesSearch;
-    })
-    .slice(0, 6);
+    });
 
   return (
     <>
@@ -45,6 +45,7 @@ export default function HaganProductsPage() {
             >
               ← Back to Products
             </Link>
+            <RoleTag category="Hagan" className="ml-3" />
           </div>
 
           {/* Hero Content */}
@@ -144,6 +145,8 @@ export default function HaganProductsPage() {
                       <h3 className="mt-2 text-2xl font-bold">
                         {product.name}
                       </h3>
+
+                      <ProductTags product={product} />
 
                       <p className="mt-4 line-clamp-2 text-[#5C574B]">
                         {product.description}
@@ -253,6 +256,8 @@ export default function HaganProductsPage() {
                   <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
                     {selectedProduct.name}
                   </h2>
+
+                  <ProductTags product={selectedProduct} />
 
                   {/* PRICE */}
                   <div className="mt-6 rounded-2xl border border-[#B5541F]/20 bg-[#B5541F]/5 p-5">

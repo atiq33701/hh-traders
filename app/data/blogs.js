@@ -52,7 +52,7 @@ export const blogs = [
     title: "Momin Extra Heavy Duty Brake Fluid for Vehicle Maintenance",
     category: "Brake Fluid",
     date: "September 2026",
-    image: "/images/products/blog2.jpeg",
+    image: "/images/products/blog2.webp",
 
     excerpt:
       "Brake fluid is an important part of a vehicle's braking system. Learn more about Momin Extra Heavy Duty Brake Fluid and the importance of using suitable brake system fluids.",
@@ -99,7 +99,7 @@ export const blogs = [
     title: "Explore the Conpex FX5 Series Automotive Products",
     category: "Automotive Products",
     date: "September 2026",
-    image: "/images/products/blog1.jpeg",
+    image: "/images/products/blog1.webp",
 
     excerpt:
       "The Conpex FX5 Series represents part of the automotive product range available for customers looking for suitable vehicle maintenance solutions.",
@@ -246,7 +246,7 @@ export const blogs = [
     title: "Honda SP Engine Oil: Understanding the Importance of Quality Lubrication",
     category: "Engine Oil",
     date: "August 2026",
-    image: "/images/products/blog4.jpeg",
+    image: "/images/products/blog4.webp",
 
     excerpt:
       "Quality engine oil and proper lubrication are important for routine vehicle maintenance. Learn what to consider when choosing engine oil for your vehicle.",

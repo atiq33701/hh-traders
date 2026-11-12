@@ -8,6 +8,7 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 import { products } from "../../data/products";
+import { ProductTags, RoleTag } from "../../components/ProductTags";
 
 export default function SKZICProductsPage() {
   const [search, setSearch] = useState("");
@@ -40,6 +41,7 @@ export default function SKZICProductsPage() {
             >
               ← Back to Products
             </Link>
+            <RoleTag category="SK ZIC" className="ml-3" />
           </div>
 
           {/* HERO CONTENT */}
@@ -121,6 +123,8 @@ export default function SKZICProductsPage() {
                       <h3 className="text-2xl font-bold text-[#1C1A16]">
                         {product.name}
                       </h3>
+
+                      <ProductTags product={product} />
 
                       <p className="mt-4 line-clamp-2 text-[#5C574B]">
                         {product.description}
@@ -208,6 +212,8 @@ export default function SKZICProductsPage() {
                   <h2 className="mt-3 text-4xl font-bold text-[#1C1A16]">
                     {selectedProduct.name}
                   </h2>
+
+                  <ProductTags product={selectedProduct} />
 
                   {/* PRICE */}
                   <div className="mt-6 rounded-2xl border border-[#B5541F]/20 bg-[#B5541F]/10 p-5">

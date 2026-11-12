@@ -9,9 +9,11 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 import { products } from "../../data/products";
+import { ProductTags, RoleTag, GroupChips } from "../../components/ProductTags";
 
 export default function TotachiProductsPage() {
   const [search, setSearch] = useState("");
+  const [group, setGroup] = useState("All");
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   const totachiProducts = products.filter((product) => {
@@ -21,7 +23,9 @@ export default function TotachiProductsPage() {
       product.name.toLowerCase().includes(search.toLowerCase()) ||
       product.description.toLowerCase().includes(search.toLowerCase());
 
-    return matchesCategory && matchesSearch;
+    const matchesGroup = group === "All" || product.group === group;
+
+      return matchesCategory && matchesSearch && matchesGroup;
   });
 
   return (
@@ -42,6 +46,7 @@ export default function TotachiProductsPage() {
             >
               ← Back to Products
             </Link>
+            <RoleTag category="Totachi" className="ml-3" />
           </div>
 
           {/* HERO CONTENT */}
@@ -77,6 +82,8 @@ export default function TotachiProductsPage() {
               onChange={(e) => setSearch(e.target.value)}
               className="w-full rounded-2xl border border-[#E4DCC8] bg-white px-6 py-5 text-[#1C1A16] outline-none placeholder:text-[#ADA48E] focus:border-[#B5541F]"
             />
+
+              <GroupChips category="Totachi" value={group} onChange={setGroup} />
 
           </div>
         </section>
@@ -134,6 +141,8 @@ export default function TotachiProductsPage() {
                         {product.name}
                       </h3>
 
+                      <ProductTags product={product} />
+
                       <p className="mt-4 line-clamp-2 text-[#5C574B]">
                         {product.description}
                       </p>
@@ -173,7 +182,7 @@ export default function TotachiProductsPage() {
                 </h3>
 
                 <button
-                  onClick={() => setSearch("")}
+                  onClick={() => { setSearch(""); setGroup("All"); }}
                   className="mt-6 rounded-xl bg-[#B5541F] px-6 py-3 font-semibold text-white transition hover:bg-[#943F14]"
                 >
                   Clear Search
@@ -232,6 +241,8 @@ export default function TotachiProductsPage() {
                   <h2 className="mt-3 text-4xl font-bold text-[#1C1A16]">
                     {selectedProduct.name}
                   </h2>
+
+                  <ProductTags product={selectedProduct} />
 
                   {/* PRICE */}
                   <div className="mt-6 rounded-2xl border border-[#B5541F]/20 bg-[#B5541F]/10 p-5">

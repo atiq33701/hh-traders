@@ -6,6 +6,7 @@ import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { products } from "../data/products";
+import { getRole } from "../components/ProductTags";
 
 const brands = [
   {
@@ -16,15 +17,17 @@ const brands = [
   },
   {
     name: "Pak Suzuki",
+    category: "Pak Suzuki",
     href: "/products/pak-suzuki",
     logo: "/images/logo/pak-suzuki.png",
     description: "Lubricants for Suzuki vehicles",
   },
   {
-    name: "Caltex Delo",
-    href: "/products/caltex-delo",
-    logo: "/images/logo/caltex-delo.png",
-    description: "Caltex and Delo lubricant products",
+    name: "Caltex",
+    category: "Caltex",
+    href: "/products/caltex",
+    logo: "/images/logo/caltex1.png",
+    description: "Caltex Delo diesel and Havoline petrol oils",
   },
   {
     name: "Toyota",
@@ -75,7 +78,7 @@ const brands = [
     description: "Atlas all-season coolant with anti-rust and anti-freeze protection.",
   },
   {
-    name: "Bearing",
+    name: "Bear Max",
     href: "/products/bearing",
     logo: "/images/logo/bear.png",
     description: "Bear Max bearings for dependable, smooth rotation.",
@@ -113,10 +116,11 @@ const brands = [
     description: "Multipurpose and high temperature greases.",
   },
   {
-    name: "Guard Filters",
-    href: "/products/guard-filter",
+    name: "Guard",
+    category: "Guard",
+    href: "/products/guard",
     logo: "/images/logo/guard filter.png",
-    description: "Guard oil filters, diesel filters and disc brake pads.",
+    description: "Guard filters, disc brake pads, brake fluid and car care.",
   },
   {
     name: "Leppon Filters",
@@ -126,9 +130,31 @@ const brands = [
   },
   {
     name: "Zix Filters",
+    category: "Zix Filter",
     href: "/products/zix-filter",
     logo: "/images/logo/zix.png",
     description: "Zix performance oil filters.",
+  },
+  {
+    name: "PSO",
+    category: "PSO",
+    href: "/products/pso",
+    logo: "/images/logo/pso1.png",
+    description: "PSO DEO diesel oils, Carient and Blaze 4T.",
+  },
+  {
+    name: "Flamingo",
+    category: "Flamingo",
+    href: "/products/flamingo",
+    logo: "/images/logo/flamingo.png",
+    description: "Fuel additives, flushes, brake fluid and car care.",
+  },
+  {
+    name: "Tuning & Accessories",
+    category: "Tuning & Accessories",
+    href: "/products/tuning-accessories",
+    logo: "/images/logo/tuning-accessories.png",
+    description: "Cleaners, WD-40, wax, air fresheners and decoration.",
   },
 ];
 
@@ -197,6 +223,12 @@ export default function ProductsPage() {
                 products from that brand.
               </p>
 
+              <p className="mx-auto mt-4 max-w-2xl text-sm font-semibold text-[#B5541F]">
+                HH Traders is a distributor for Castrol, Hagan, Pak Suzuki
+                ECSTAR and Zix Filters. All other brands are available
+                wholesale.
+              </p>
+
             </div>
 
 
@@ -222,6 +254,16 @@ export default function ProductsPage() {
     <h3 className="relative mt-6 text-xl font-bold transition duration-300 group-hover:text-[#B5541F]">
       {brand.name}
     </h3>
+
+    <span
+      className={`relative mt-3 inline-block rounded-full border px-3 py-1 text-xs font-bold uppercase tracking-wider ${
+        getRole(brand.category || brand.name) === "Distributor"
+          ? "border-[#B5541F] bg-[#B5541F] text-[#F5F1E8]"
+          : "border-[#B5541F]/40 bg-[#B5541F]/5 text-[#B5541F]"
+      }`}
+    >
+      {getRole(brand.category || brand.name)}
+    </span>
 
     <p className="relative mt-3 text-sm leading-relaxed text-[#5C574B]">
       {brand.description}

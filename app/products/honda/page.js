@@ -6,9 +6,11 @@ import Link from "next/link";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { products } from "../../data/products";
+import { ProductTags, RoleTag, GroupChips } from "../../components/ProductTags";
 
 export default function HondaProductsPage() {
   const [search, setSearch] = useState("");
+  const [group, setGroup] = useState("All");
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   const hondaProducts = products
@@ -19,9 +21,10 @@ export default function HondaProductsPage() {
         product.name.toLowerCase().includes(search.toLowerCase()) ||
         product.description.toLowerCase().includes(search.toLowerCase());
 
-      return matchesCategory && matchesSearch;
-    })
-    .slice(0, 6);
+      const matchesGroup = group === "All" || product.group === group;
+
+      return matchesCategory && matchesSearch && matchesGroup;
+    });
 
   return (
     <>
@@ -41,6 +44,7 @@ export default function HondaProductsPage() {
             >
               ← Back to Products
             </Link>
+            <RoleTag category="Honda" className="ml-3" />
           </div>
 
           {/* Hero Content */}
@@ -78,6 +82,8 @@ export default function HondaProductsPage() {
               onChange={(e) => setSearch(e.target.value)}
               className="w-full rounded-2xl border border-[#E4DCC8] bg-white px-6 py-5 text-[#1C1A16] outline-none placeholder:text-[#ADA48E] focus:border-[#B5541F] focus:ring-4 focus:ring-[#B5541F]/10"
             />
+
+              <GroupChips category="Honda" value={group} onChange={setGroup} />
 
           </div>
 
@@ -137,6 +143,8 @@ export default function HondaProductsPage() {
                         {product.name}
                       </h3>
 
+                      <ProductTags product={product} />
+
                       <p className="mt-4 line-clamp-2 text-[#5C574B]">
                         {product.description}
                       </p>
@@ -179,7 +187,7 @@ export default function HondaProductsPage() {
                 </h3>
 
                 <button
-                  onClick={() => setSearch("")}
+                  onClick={() => { setSearch(""); setGroup("All"); }}
                   className="mt-6 rounded-xl bg-[#B5541F] px-6 py-3 font-semibold text-[#F5F1E8] transition hover:bg-[#943F14]"
                 >
                   Clear Search
@@ -240,6 +248,8 @@ export default function HondaProductsPage() {
     <h2 className="mt-3 text-4xl font-bold">
       {selectedProduct.name}
     </h2>
+
+                  <ProductTags product={selectedProduct} />
 
 
     {/* PRICE */}
